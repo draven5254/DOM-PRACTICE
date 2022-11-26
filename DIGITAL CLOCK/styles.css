@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Silkscreen", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+  padding-bottom: 50vh;
+}
+
+.clock div {
+  margin: 5px;
+  position: relative;
+}
+
+.clock span {
+  width: 9rem;
+  height: 9rem;
+  background-color: #242424;
+  opacity: 0.8;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  letter-spacing: 2px;
+  background: #7e7e7e;
+}
+
+.clock .number {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.clock #ampm {
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.video {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
